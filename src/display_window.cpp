@@ -92,6 +92,7 @@ void display_window::create(const std::string& title, int w, int h)
 
 	m_width = w;
 	m_height = h;
+	update_viewport();
 
 	m_initialised = true;
 }
@@ -167,65 +168,11 @@ void display_window::update_bitmap(const ppu_types::display_bitmap_t& image)
 	}
 }
 
-bool display_window::window_should_close() 
-{ 
-	return m_should_quit;
-}
-
-void display_window::set_window_should_close(bool value)
+void display_window::update_viewport()
 {
-	m_should_quit = value;
-}
-
-void display_window::swap_buffers()
-{
-	SDL_GL_SwapWindow(m_window);
-}
-
-void display_window::poll_events()
-{
-	SDL_Event event;
-	while (SDL_PollEvent(&event))
-	{
-		if (event.type == SDL_QUIT)
-			m_should_quit = true;
-
-		if(event.type == SDL_WINDOWEVENT)
-		{
-			if (event.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
-			{
-				m_width = event.window.data1;
-				m_height = event.window.data2;
-			}
-		}
-
-		if (event.type == SDL_KEYDOWN || event.type == SDL_KEYUP)
-		{
-			int key = event.key.keysym.sym;
-			bool press = true;
-
-			switch (event.type)
-			{
-			case SDL_KEYDOWN: press = true; break;
-			case SDL_KEYUP: press = false; break;
-			}
-
-			if (key == SDLK_ESCAPE && press)
-				set_window_should_close(true);
-
-			key_event(key, press);		
-		}
-	}
-}
-
-void display_window::render()
-{
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
 	GLsizei vpx = 0, vpy = 0;
 	GLsizei vpw = m_width, vph = m_height;
-
+	
 	if (m_keep_ppu_aspect) 
 	{
 		// the requested ratio
@@ -255,6 +202,64 @@ void display_window::render()
 	}
 
 	glViewport(vpx, vpy, vpw, vph);
+}
+
+bool display_window::window_should_close() 
+{ 
+	return m_should_quit;
+}
+
+void display_window::set_window_should_close(bool value)
+{
+	m_should_quit = value;
+}
+
+void display_window::swap_buffers()
+{
+	SDL_GL_SwapWindow(m_window);
+}
+
+void display_window::poll_events()
+{
+	SDL_Event event;
+	while (SDL_PollEvent(&event))
+	{
+		if (event.type == SDL_QUIT)
+			m_should_quit = true;
+
+		if(event.type == SDL_WINDOWEVENT)
+		{
+			if (event.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
+			{
+				m_width = event.window.data1;
+				m_height = event.window.data2;
+				update_viewport();
+			}
+		}
+
+		if (event.type == SDL_KEYDOWN || event.type == SDL_KEYUP)
+		{
+			int key = event.key.keysym.sym;
+			bool press = true;
+
+			switch (event.type)
+			{
+			case SDL_KEYDOWN: press = true; break;
+			case SDL_KEYUP: press = false; break;
+			}
+
+			if (key == SDLK_ESCAPE && press)
+				set_window_should_close(true);
+
+			key_event(key, press);		
+		}
+	}
+}
+
+void display_window::render()
+{
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	m_sha.use();
 	

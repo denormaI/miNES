@@ -48,6 +48,8 @@ private:
 	std::string m_quad_vs_code;
 	std::string m_quad_fs_code;
 
+	void update_viewport();
+
 	void init_display_quad();
 
 	int m_width, m_height;
