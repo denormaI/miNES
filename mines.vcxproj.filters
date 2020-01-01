@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\apu_snapshot.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Blip_Buffer.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Multi_Buffer.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Apu.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Namco.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Oscs.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Vrc6.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nonlinear_Buffer.cpp">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\Wave_Writer.cpp">
+      <Filter>Nes_Snd_Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nes_Snd_Emu-0.1.7\Sound_Queue.cpp">
+      <Filter>Nes_Snd_Emu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\display_window.cpp" />
+    <ClCompile Include="src\mines_sys.cpp" />
+    <ClCompile Include="src\gl_shader.cpp" />
+    <ClCompile Include="src\nes_cart.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nes_controllers.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nes_cpu.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nes_ppu.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\_nes_apu.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper0.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper1.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper2.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper3.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ines_mapper7.cpp">
+      <Filter>mappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nonlinear_Buffer.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\apu_snapshot.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\blargg_common.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\blargg_source.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Blip_Buffer.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Blip_Synth.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Multi_Buffer.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Apu.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Namco.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Oscs.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\nes_apu\Nes_Vrc6.h">
+      <Filter>Nes_Snd_Emu\nes_apu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\boost\config.hpp">
+      <Filter>Nes_Snd_Emu\boost</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\boost\cstdint.hpp">
+      <Filter>Nes_Snd_Emu\boost</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\boost\static_assert.hpp">
+      <Filter>Nes_Snd_Emu\boost</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\config.h">
+      <Filter>Nes_Snd_Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\Wave_Writer.hpp">
+      <Filter>Nes_Snd_Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nes_Snd_Emu-0.1.7\Sound_Queue.h">
+      <Filter>Nes_Snd_Emu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display_window.h" />
+    <ClInclude Include="src\mines_sys.h" />
+    <ClInclude Include="src\gl_shader.h" />
+    <ClInclude Include="src\nes_cart.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nes_controllers.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nes_cpu.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nes_device.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nes_ppu.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nes_apu.h">
+      <Filter>nes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types.h" />
+    <ClInclude Include="src\ines_mapper.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ines_mapper0.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ines_mapper1.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ines_mapper2.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ines_mapper3.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ines_mapper7.h">
+      <Filter>mappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Nes_Snd_Emu">
+      <UniqueIdentifier>{02e462b7-6dfc-4d6c-ab53-bb4a992de3ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nes_Snd_Emu\boost">
+      <UniqueIdentifier>{9c112fea-2096-42b2-b5ff-a38fc6400d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nes_Snd_Emu\nes_apu">
+      <UniqueIdentifier>{712f0b82-36ea-4b06-99fe-c81bc9eaf80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mappers">
+      <UniqueIdentifier>{62317282-763f-45f6-adba-4e1f3fa1c0c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nes">
+      <UniqueIdentifier>{3f79cfba-bfa3-402b-83a5-7cfe93e8c44b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

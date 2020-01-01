@@ -1,0 +1,31 @@
+AUTOMAKE_OPTIONS = foreign
+bin_PROGRAMS = mines
+mines_SOURCES = \
+    src/main.cpp \
+    src/gl_shader.cpp \
+    src/display_window.cpp \
+    src/mines_sys.cpp \
+    src/nes_cpu.cpp \
+    src/nes_ppu.cpp \
+    src/_nes_apu.cpp \
+    src/nes_cart.cpp \
+    src/nes_controllers.cpp \
+    src/ines_mapper.cpp \
+    src/ines_mapper0.cpp \
+    src/ines_mapper1.cpp \
+    src/ines_mapper2.cpp \
+    src/ines_mapper3.cpp \
+    src/ines_mapper7.cpp \
+    src/Nes_Snd_Emu-0.1.7/Sound_Queue.cpp \
+    src/Nes_Snd_Emu-0.1.7/Wave_Writer.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/apu_snapshot.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Blip_Buffer.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Multi_Buffer.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Apu.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Namco.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Oscs.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Vrc6.cpp \
+    src/Nes_Snd_Emu-0.1.7/nes_apu/Nonlinear_Buffer.cpp
+mines_CXXFLAGS = -Wall -Wno-c++11-narrowing -std=c++11 -Isrc/Nes_Snd_Emu-0.1.7 `pkg-config --cflags glew sdl2`
+mines_LDFLAGS = `pkg-config --libs glew sdl2`
+
