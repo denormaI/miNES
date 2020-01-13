@@ -7,7 +7,7 @@
 ## Build on Linux
 1. Install dependencies.
 ```sudo apt-get install autoconf automake autotools-dev libglew-dev libsdl2-dev```
-2. ```./configure && make```
+2. ```autoreconf --install && ./configure && make```
 
 ## Run
 If audio is choppy on Linux run `export SDL_AUDIODRIVER=alsa` before miNES as a workaround.
