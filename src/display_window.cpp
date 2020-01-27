@@ -56,8 +56,6 @@ void display_window::update_window_size(int w, int h)
 	m_height = h;
 }
 
-#include <iostream>
-
 void display_window::create(const std::string& title, int w, int h)
 {
 	if (m_initialised)
@@ -66,7 +64,7 @@ void display_window::create(const std::string& title, int w, int h)
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 		throw mines_exception("Failed to init SDL");
 
-	//Use OpenGL 3.2 core
+	// Use OpenGL 3.2 core
 	SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 3 );
 	SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 2 );
 	SDL_GL_SetAttribute( SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE );
@@ -170,7 +168,8 @@ void display_window::update_bitmap(const ppu_types::display_bitmap_t& image)
 	if (m_initialised)
 	{
 		glBindTexture(GL_TEXTURE_2D, m_bitmap_tex_id);
-		glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, ppu_types::VISIBLE_DOTS, ppu_types::VISIBLE_LINES, GL_RGBA, GL_UNSIGNED_BYTE, image.data());
+		glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, ppu_types::VISIBLE_DOTS, ppu_types::VISIBLE_LINES, 
+				GL_RGBA, GL_UNSIGNED_BYTE, image.data());
 		glBindTexture(GL_TEXTURE_2D, 0);
 	}
 }
@@ -265,7 +264,7 @@ void display_window::poll_events()
 
 void display_window::render()
 {
-	glClearColor(0.0f, 0.0f, 1.0f, 1.0f );
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	m_sha.use();

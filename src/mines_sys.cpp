@@ -22,7 +22,6 @@ mines_sys::mines_sys(const std::string& rom_path, bool keep_ppu_aspect) :
 
 mines_sys::~mines_sys() 
 {
-
 }
 
 void mines_sys::entry() 

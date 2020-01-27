@@ -27,7 +27,7 @@ mines_SOURCES = \
     src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Vrc6.cpp \
     src/Nes_Snd_Emu-0.1.7/nes_apu/Nonlinear_Buffer.cpp
 
-mines_CXXFLAGS = -Wall -Wno-c++11-narrowing -std=c++11 -Isrc/Nes_Snd_Emu-0.1.7
+mines_CXXFLAGS = -Wall -std=c++11 -Isrc/Nes_Snd_Emu-0.1.7
 
 if OSX
 mines_CXXFLAGS += -F/Library/Frameworks -DGL_SILENCE_DEPRECATION

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <functional>
 #include <memory>
@@ -53,7 +54,6 @@ private:
 	int m_width, m_height;
 	gl_shader m_sha;
 
-	//GLFWwindow* m_window;
 	SDL_Window* m_window;
 	SDL_GLContext m_sdl_context;
 

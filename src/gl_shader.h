@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <fstream>
 #include <streambuf>
@@ -7,11 +8,7 @@
 
 #include "../types.h"
 
-#ifdef __APPLE__
-#include <OpenGL/gl3.h>
-#else
-#include <GL/glew.h>
-#endif
+#include "gl_platform.h"
 
 struct gl_shader_var
 {
@@ -21,7 +18,6 @@ struct gl_shader_var
 
 typedef std::vector<gl_shader_var> gl_shader_var_v;
 
-//-----------------------------------------------------------------------------
 class gl_shader 
 {
 public:

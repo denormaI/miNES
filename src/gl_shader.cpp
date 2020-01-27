@@ -1,6 +1,9 @@
 #include "mines_sys.h"
 #include "gl_shader.h"
 
+/*
+ * TODO: Clean up the error handling. 
+ */
 
 static bool read_file_text(const std::string& path, std::string& text_out)
 {
@@ -9,10 +12,10 @@ static bool read_file_text(const std::string& path, std::string& text_out)
         return false;
         
     /* 
-        Read whole file in to string.
-        Note the extra parentheses around the first argument to the string constructor. 
-        They prevent the problem known as the "most vexing parse". 
-    */
+	 * Read whole file in to string.
+	 * Note the extra parentheses around the first argument to the string constructor. 
+	 * They prevent the problem known as the "most vexing parse". 
+	 */
     text_out = std::string(
         (std::istreambuf_iterator<char>(file)),
         std::istreambuf_iterator<char>());
@@ -21,10 +24,6 @@ static bool read_file_text(const std::string& path, std::string& text_out)
 
     return true;
 }
-
-// ----------------------------------------------------------------------------
-// gl_shader
-// ----------------------------------------------------------------------------
 
 gl_shader::gl_shader()
 {
@@ -86,8 +85,6 @@ void gl_shader::init_from_file(const std::string& vs_file_path, const std::strin
 
 void gl_shader::init_from_str(const std::string& vs_code, const std::string& fs_code)
 {
-    //on_gl_error(oglERR_CLEAR); 
-
     const GLchar* vs_code_cstr = vs_code.c_str();
     const GLchar* fs_code_cstr = fs_code.c_str();
 
@@ -95,16 +92,12 @@ void gl_shader::init_from_str(const std::string& vs_code, const std::string& fs_
     m_vs_id = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(m_vs_id, 1, &vs_code_cstr, NULL);
 
-    //on_gl_error(oglERR_SHADERCREATE);
-
     if (!compile(m_vs_id))
         throw mines_exception("Shader compile error");
 
     // Create and compile fragment shader.
     m_fs_id = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(m_fs_id, 1, &fs_code_cstr, NULL);
-
-    //on_gl_error(oglERR_SHADERCREATE);
 
     if (!compile(m_fs_id))
         throw mines_exception("Shader compile error");
@@ -130,8 +123,6 @@ void gl_shader::init_from_str(const std::string& vs_code, const std::string& fs_
     glDetachShader(m_pro_id, m_fs_id);
     glDeleteShader(m_fs_id);
 
-    //on_gl_error(oglERR_JUSTLOG, "Shaders successfully compiled and linked.");
-
     // After linking, we can get locations for uniforms.
     for (auto it = m_sha_unif.begin(); it != m_sha_unif.end(); ++it)
 	{
@@ -143,30 +134,29 @@ void gl_shader::init_from_str(const std::string& vs_code, const std::string& fs_
 
     m_shader_initialised = true;
 }
-#include <iostream>
+
 bool gl_shader::compile(GLuint shader_id)
 {
-    glCompileShader(shader_id);
+	glCompileShader(shader_id);
 
-    GLint param = 0;
-    glGetShaderiv(shader_id, GL_COMPILE_STATUS, &param);
+	GLint param = 0;
+	glGetShaderiv(shader_id, GL_COMPILE_STATUS, &param);
 
-    if (param == GL_FALSE)
-    {
-        glGetShaderiv(shader_id, GL_INFO_LOG_LENGTH, &param);
+	if (param == GL_FALSE)
+	{
+		glGetShaderiv(shader_id, GL_INFO_LOG_LENGTH, &param);
 
-        if (param > 0) 
-        {
+ 		if (param > 0) 
+		{
             GLchar* info = new GLchar[param];
             int nchars = 0;
             glGetShaderInfoLog(shader_id, param, &nchars, info);
-	    std::cout << info << std::endl;
-            //on_gl_error(oglERR_SHADERCOMPILE, info);
-            delete [] info;
-        }
-        return false;
-    }
-    return true;
+			std::cout << info << std::endl;
+			delete [] info;
+ 		}
+		return false;
+	}
+	return true;
 }
 
 bool gl_shader::link_prog(GLuint program_id) 
@@ -185,7 +175,6 @@ bool gl_shader::link_prog(GLuint program_id)
             GLchar* info = new GLchar[param];
             int nchars = 0;
             glGetProgramInfoLog(program_id, param, &nchars, info);
-            //on_gl_error(oglERR_SHADERLINK, info);
             delete [] info;
         }
         return false;
