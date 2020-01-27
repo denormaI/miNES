@@ -6,10 +6,10 @@
 2. ```autoreconf --install && ./configure && make```
 
 ## Build on Mac OS X
-1. Install ![Homebrew](https://brew.sh/).
+1. Install [Homebrew](https://brew.sh/).
 2. Install build tools.
 ```brew install gcc automake autoconf```
-3. Download SDL2 framework .dmg from ![libsdl.org](https://www.libsdl.org/download-2.0.php).
+3. Download SDL2 framework .dmg from [libsdl.org](https://www.libsdl.org/download-2.0.php).
 Install SDL2 to /Library/Frameworks (command+shift+g, enter name of the folder then
 drag&drop).
 4. ```autoreconf --install && ./configure && make```
