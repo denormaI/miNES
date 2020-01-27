@@ -1,7 +1,5 @@
 #pragma once
 
-#include <GL/glew.h>
-
 #ifdef _WIN32
 #include <SDL.h>
 #else

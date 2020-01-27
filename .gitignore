@@ -1,4 +1,6 @@
 .directory
+*.swp
+*.Po
 *.d
 *.o
 *.a

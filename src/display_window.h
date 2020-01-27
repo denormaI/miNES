@@ -4,8 +4,6 @@
 #include <functional>
 #include <memory>
 
-#include <GL/glew.h>
-
 #ifdef _WIN32
 #include <SDL.h>
 #else

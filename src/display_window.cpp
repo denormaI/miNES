@@ -12,7 +12,7 @@ display_window::display_window(bool keep_ppu_aspect) :
 		m_should_quit(false)
 {
 	m_quad_vs_code =
-		"#version 440 core	\n"
+		"#version 150 core	\n"
 
 		"in vec3 position;"
 		"in vec2 tex_coord;"
@@ -25,7 +25,7 @@ display_window::display_window(bool keep_ppu_aspect) :
 		"}";
 
 	m_quad_fs_code =
-		"#version 440 core	\n"
+		"#version 150 core	\n"
 
 		"in vec2 tex_coord_through;"
 		"out vec4 color_out;"
@@ -56,6 +56,8 @@ void display_window::update_window_size(int w, int h)
 	m_height = h;
 }
 
+#include <iostream>
+
 void display_window::create(const std::string& title, int w, int h)
 {
 	if (m_initialised)
@@ -64,9 +66,9 @@ void display_window::create(const std::string& title, int w, int h)
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 		throw mines_exception("Failed to init SDL");
 
-	//Use OpenGL 3.1 core
+	//Use OpenGL 3.2 core
 	SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 3 );
-	SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 1 );
+	SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 2 );
 	SDL_GL_SetAttribute( SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE );
 
 	m_window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
@@ -76,15 +78,17 @@ void display_window::create(const std::string& title, int w, int h)
 
 	m_sdl_context = SDL_GL_CreateContext(m_window);
 	if(!m_sdl_context)
-		throw mines_exception("OpenGL context could not be created>");
+		throw mines_exception("OpenGL context could not be created.");
 
 	// Turn on double buffering.
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
+#ifndef __APPLE__
 	glewExperimental = GL_TRUE;
 	GLenum err = glewInit();
 	if (err != GLEW_OK)
 		throw mines_exception("ERROR: " + std::string((const char*)glewGetErrorString(err)));
+#endif
 
 	SDL_GL_SetSwapInterval(1);
 
@@ -93,6 +97,9 @@ void display_window::create(const std::string& title, int w, int h)
 	m_width = w;
 	m_height = h;
 	update_viewport();
+
+	std::cout << "OpenGL version " << glGetString(GL_VERSION) << std::endl;
+	std::cout << "GLSL version " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
 
 	m_initialised = true;
 }
@@ -258,7 +265,7 @@ void display_window::poll_events()
 
 void display_window::render()
 {
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
+	glClearColor(0.0f, 0.0f, 1.0f, 1.0f );
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	m_sha.use();

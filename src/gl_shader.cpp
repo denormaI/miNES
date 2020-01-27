@@ -1,5 +1,3 @@
-#include <GL/glew.h>
-
 #include "mines_sys.h"
 #include "gl_shader.h"
 
@@ -145,7 +143,7 @@ void gl_shader::init_from_str(const std::string& vs_code, const std::string& fs_
 
     m_shader_initialised = true;
 }
-
+#include <iostream>
 bool gl_shader::compile(GLuint shader_id)
 {
     glCompileShader(shader_id);
@@ -153,15 +151,16 @@ bool gl_shader::compile(GLuint shader_id)
     GLint param = 0;
     glGetShaderiv(shader_id, GL_COMPILE_STATUS, &param);
 
-    if (param == GL_FALSE) 
-	{
+    if (param == GL_FALSE)
+    {
         glGetShaderiv(shader_id, GL_INFO_LOG_LENGTH, &param);
 
         if (param > 0) 
-		{
+        {
             GLchar* info = new GLchar[param];
             int nchars = 0;
             glGetShaderInfoLog(shader_id, param, &nchars, info);
+	    std::cout << info << std::endl;
             //on_gl_error(oglERR_SHADERCOMPILE, info);
             delete [] info;
         }

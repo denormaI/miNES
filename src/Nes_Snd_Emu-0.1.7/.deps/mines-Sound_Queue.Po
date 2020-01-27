@@ -1,504 +1,578 @@
 src/Nes_Snd_Emu-0.1.7/mines-Sound_Queue.o: \
- src/Nes_Snd_Emu-0.1.7/Sound_Queue.cpp /usr/include/stdc-predef.h \
- src/Nes_Snd_Emu-0.1.7/Sound_Queue.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
- /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
- /usr/include/SDL2/begin_code.h /usr/include/SDL2/close_code.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/c++/8/stdlib.h \
- /usr/include/c++/8/cstdlib \
- /usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h \
- /usr/include/x86_64-linux-gnu/c++/8/bits/cpu_defines.h \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/8/bits/std_abs.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/inttypes.h /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h \
- /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/ctype.h /usr/include/c++/8/math.h /usr/include/c++/8/cmath \
- /usr/include/c++/8/bits/cpp_type_traits.h \
- /usr/include/c++/8/ext/type_traits.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/x86_64-linux-gnu/bits/mathinline.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/float.h \
- /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
- /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
- /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h \
- /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h \
- /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/tmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/popcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/wmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512erintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512pfintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512cdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512dqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vlbwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vldqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512ifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512ifmavlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx5124fmapsintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx5124vnniwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vpopcntdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmi2vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vnnivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vpopcntdqvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bitalgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/shaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/lzcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/bmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/bmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/fmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/f16cintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/rtmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/xtestintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/cetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/gfniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/vaesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/vpclmulqdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/movdirintrin.h \
- /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_video.h \
- /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL_rect.h \
- /usr/include/SDL2/SDL_surface.h /usr/include/SDL2/SDL_blendmode.h \
- /usr/include/SDL2/SDL_keyboard.h /usr/include/SDL2/SDL_keycode.h \
- /usr/include/SDL2/SDL_scancode.h /usr/include/SDL2/SDL_mouse.h \
- /usr/include/SDL2/SDL_joystick.h /usr/include/SDL2/SDL_gamecontroller.h \
- /usr/include/SDL2/SDL_quit.h /usr/include/SDL2/SDL_gesture.h \
- /usr/include/SDL2/SDL_touch.h /usr/include/SDL2/SDL_filesystem.h \
- /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hints.h \
- /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
- /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
- /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_sensor.h \
- /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
- /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
- /usr/include/assert.h
-
-/usr/include/stdc-predef.h:
+  src/Nes_Snd_Emu-0.1.7/Sound_Queue.cpp \
+  src/Nes_Snd_Emu-0.1.7/Sound_Queue.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_main.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_config.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h \
+  /Library/Frameworks/SDL2.framework/Headers/begin_code.h \
+  /Library/Frameworks/SDL2.framework/Headers/close_code.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_char.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_short.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_gid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ino_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_off_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_clock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_time_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_def.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_set.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdio.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__config \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_va_list.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/i386/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uintmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__nullptr \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/strings.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/inttypes.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/inttypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/inttypes.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/runetype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_wint_t.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/math.h \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/limits \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/__undef_macros \
+  /Library/Developer/CommandLineTools/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/float.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_assert.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_audio.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_error.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_thread.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/xmmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/mm_malloc.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/pmmintrin.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_events.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_video.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_surface.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_quit.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_touch.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_hints.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_log.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_power.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_render.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_shape.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_system.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_timer.h \
+  /Library/Frameworks/SDL2.framework/Headers/SDL_version.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/assert.h
 
 src/Nes_Snd_Emu-0.1.7/Sound_Queue.h:
 
-/usr/include/SDL2/SDL.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL.h:
 
-/usr/include/SDL2/SDL_main.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_main.h:
 
-/usr/include/SDL2/SDL_stdinc.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h:
 
-/usr/include/SDL2/SDL_config.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_config.h:
 
-/usr/include/SDL2/SDL_platform.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h:
 
-/usr/include/SDL2/begin_code.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityMacros.h:
 
-/usr/include/SDL2/close_code.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/Availability.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/AvailabilityInternal.h:
 
-/usr/include/features.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/TargetConditionals.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/Library/Frameworks/SDL2.framework/Headers/close_code.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/types.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/appleapiopts.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_posix_availability.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_types.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int8_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int16_t.h:
 
-/usr/include/endian.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int32_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_int64_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int8_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int16_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int32_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int64_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_intptr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_uintptr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/endian.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/endian.h:
 
-/usr/include/stdio.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_endian.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/_OSByteOrder.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libkern/i386/_OSByteOrder.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_char.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_short.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_u_int.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_caddr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_dev_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_blksize_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_gid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_in_addr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_in_port_t.h:
 
-/usr/include/c++/8/stdlib.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ino_t.h:
 
-/usr/include/c++/8/cstdlib:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ino64_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_key_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_mode_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/8/bits/cpu_defines.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_nlink_t.h:
 
-/usr/include/stdlib.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_id_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_pid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_off_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_uid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_clock_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_size_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ssize_t.h:
 
-/usr/include/alloca.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_time_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_useconds_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_suseconds_t.h:
 
-/usr/include/c++/8/bits/std_abs.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_rsize_t.h:
 
-/usr/include/string.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_errno_t.h:
 
-/usr/include/strings.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_def.h:
 
-/usr/include/wchar.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_setsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_set.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_clr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_zero.h:
 
-/usr/include/inttypes.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_isset.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fd_copy.h:
 
-/usr/include/stdint.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/usr/include/ctype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
-/usr/include/c++/8/math.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
-/usr/include/c++/8/cmath:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
-/usr/include/c++/8/bits/cpp_type_traits.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
 
-/usr/include/c++/8/ext/type_traits.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
-/usr/include/math.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__config:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/pthread.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/float.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_va_list.h:
 
-/usr/include/SDL2/SDL_assert.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_null.h:
 
-/usr/include/SDL2/SDL_atomic.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/stdio.h:
 
-/usr/include/SDL2/SDL_audio.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdlib.h:
 
-/usr/include/SDL2/SDL_error.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdlib.h:
 
-/usr/include/SDL2/SDL_endian.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/wait.h:
 
-/usr/include/SDL2/SDL_mutex.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/signal.h:
 
-/usr/include/SDL2/SDL_thread.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/signal.h:
 
-/usr/include/SDL2/SDL_rwops.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/signal.h:
 
-/usr/include/SDL2/SDL_clipboard.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/machine/_mcontext.h:
 
-/usr/include/SDL2/SDL_cpuinfo.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/i386/_mcontext.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/machine/_structs.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/mmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/mach/i386/_structs.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/xmmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_sigaltstack.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/mm_malloc.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ucontext.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/emmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_sigset_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/resource.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/tmmintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stdint.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stdint.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/popcntintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/stdint.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/wmmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint8_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint16_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint32_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uint64_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512erintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_intmax_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512pfintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_types/_uintmax_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512cdintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_timeval.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vlintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/alloca.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512dqintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_rune_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vlbwintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_wchar_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vldqintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/malloc/_malloc.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512ifmaintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/stddef.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512ifmavlintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stddef.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmiintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/__stddef_max_align_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmivlintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__nullptr:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx5124fmapsintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx5124vnniwintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/string.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vpopcntdqintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/string.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmi2intrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/strings.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vbmi2vlintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/inttypes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vnniintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/inttypes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vnnivlintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/inttypes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512vpopcntdqvlintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/ctype.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bitalgintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/ctype.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/shaintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/_ctype.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/lzcntintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/runetype.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/bmiintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_wint_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/bmi2intrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/math.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/fmaintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/math.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/f16cintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/rtmintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/cstddef:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/xtestintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/limits:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/cetintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__undef_macros:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/gfniintrin.h:
+/Library/Developer/CommandLineTools/usr/include/c++/v1/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/vaesintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/vpclmulqdqintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/8/include/movdirintrin.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h:
 
-/usr/include/SDL2/SDL_events.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h:
 
-/usr/include/SDL2/SDL_video.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h:
 
-/usr/include/SDL2/SDL_pixels.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_error.h:
 
-/usr/include/SDL2/SDL_rect.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h:
 
-/usr/include/SDL2/SDL_surface.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h:
 
-/usr/include/SDL2/SDL_blendmode.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h:
 
-/usr/include/SDL2/SDL_keyboard.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h:
 
-/usr/include/SDL2/SDL_keycode.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h:
 
-/usr/include/SDL2/SDL_scancode.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h:
 
-/usr/include/SDL2/SDL_mouse.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/mmintrin.h:
 
-/usr/include/SDL2/SDL_joystick.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/xmmintrin.h:
 
-/usr/include/SDL2/SDL_gamecontroller.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/mm_malloc.h:
 
-/usr/include/SDL2/SDL_quit.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/emmintrin.h:
 
-/usr/include/SDL2/SDL_gesture.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/pmmintrin.h:
 
-/usr/include/SDL2/SDL_touch.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_events.h:
 
-/usr/include/SDL2/SDL_filesystem.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_video.h:
 
-/usr/include/SDL2/SDL_haptic.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h:
 
-/usr/include/SDL2/SDL_hints.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h:
 
-/usr/include/SDL2/SDL_loadso.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h:
 
-/usr/include/SDL2/SDL_log.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h:
 
-/usr/include/SDL2/SDL_messagebox.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h:
 
-/usr/include/SDL2/SDL_power.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h:
 
-/usr/include/SDL2/SDL_render.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h:
 
-/usr/include/SDL2/SDL_sensor.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h:
 
-/usr/include/SDL2/SDL_shape.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h:
 
-/usr/include/SDL2/SDL_system.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h:
 
-/usr/include/SDL2/SDL_timer.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h:
 
-/usr/include/SDL2/SDL_version.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h:
 
-/usr/include/assert.h:
+/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_log.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_power.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_render.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_system.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h:
+
+/Library/Frameworks/SDL2.framework/Headers/SDL_version.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/assert.h:

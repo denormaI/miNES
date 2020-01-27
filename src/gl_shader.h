@@ -7,6 +7,12 @@
 
 #include "../types.h"
 
+#ifdef __APPLE__
+#include <OpenGL/gl3.h>
+#else
+#include <GL/glew.h>
+#endif
+
 struct gl_shader_var
 {
     GLuint loc;         // The attribute location retrieved from GL.
