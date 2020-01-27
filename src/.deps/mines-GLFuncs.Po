@@ -1,8 +1,0 @@
-src/mines-GLFuncs.o: src/GLFuncs.cpp /usr/include/stdc-predef.h \
- src/GLFuncs.h /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h
-
-/usr/include/stdc-predef.h:
-
-src/GLFuncs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
