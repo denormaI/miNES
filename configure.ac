@@ -21,9 +21,15 @@ case "${host_os}" in
         ;;
 esac
 
-# Pass the conditionals to automake
+# Pass the conditionals to automake.
 AM_CONDITIONAL([LINUX], [test "$build_linux" = "yes"])
 AM_CONDITIONAL([OSX], [test "$build_mac" = "yes"])
+
+AM_CONDITIONAL(COMPILER_IS_CLANG, [test "$CXX" = clang])
+
+# Check for SDL2 and GLEW.
+PKG_CHECK_MODULES([GLEW], [glew], , AC_MSG_ERROR(["GLEW not found"]))
+PKG_CHECK_MODULES([SDL2], [sdl2], , AC_MSG_ERROR(["SDL2 not found"]))
 
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT

@@ -27,12 +27,19 @@ mines_SOURCES = \
     src/Nes_Snd_Emu-0.1.7/nes_apu/Nes_Vrc6.cpp \
     src/Nes_Snd_Emu-0.1.7/nes_apu/Nonlinear_Buffer.cpp
 
-mines_CXXFLAGS = -Wall -std=c++11 -Isrc/Nes_Snd_Emu-0.1.7
+mines_CXXFLAGS = -Wall -std=c++14 -Isrc/Nes_Snd_Emu-0.1.7
+
+if COMPILER_IS_CLANG
+mines_CXXFLAGS += -Wc++11-narrowing
+endif
 
 if OSX
 mines_CXXFLAGS += -F/Library/Frameworks -DGL_SILENCE_DEPRECATION
 mines_LDFLAGS = -framework OpenGL -framework SDL2
 endif
+
+LIBS =`pkg-config --libs glew sdl2`
+$(info pkg-config gives [${LIBS}])
 
 if LINUX
 mines_CXXFLAGS += `pkg-config --cflags glew sdl2`

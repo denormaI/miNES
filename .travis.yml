@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+os:
+  - linux
+install:
+  - sudo apt-get update
+  - sudo apt-get install libegl1-mesa-dev libglew-dev libsdl2-dev autoconf automake autotools-dev
+before_script:
+  - autoreconf --install
+script: 
+  - ./configure && make
