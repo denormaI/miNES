@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/denormaI/miNES.svg?branch=master)](https://travis-ci.com/denormaI/miNES)
 
-**miNES** is an approximately cycle-accurate NES emulator.
+**miNES** is a cycle accurate emulator that still can't run Battletoads.
 
 ## Build on Linux
 1. Install dependencies.
