@@ -3,18 +3,18 @@
 
 int main(int argc, char* argv[])
 {
-	if (argc <= 1)
+	/*if (argc <= 1)
 	{
 		std::cout << "usage: " << argv[0] << " <rom path> <optional arguments>\n";
 		std::cout << "optional:\n\t--stretch\tdon't preserve video aspect ratio\n";
 		return 0;
-	}
+	}*/
 
 	try
 	{
 		bool keep_ppu_aspect = true;
 
-		std::string rom_path = argv[1];
+		std::string rom_path = "Super Mario Bros.nes";/*argv[1]*/;
 
 		for (int i = 2; i < argc; i++)
 		{

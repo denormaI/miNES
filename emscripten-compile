@@ -1,0 +1,2 @@
+ 
+emcc src/mines_sys.cpp src/ines_mapper1.cpp src/ines_mapper.cpp src/nes_controllers.cpp src/ines_mapper2.cpp src/nes_ppu.cpp src/nes_cpu.cpp src/display_window.cpp src/ines_mapper0.cpp src/gl_shader.cpp src/main.cpp src/nes_cart.cpp src/ines_mapper3.cpp src/ines_mapper7.cpp -o mines.html -s USE_SDL=2 -s WASM=1 -s DISABLE_EXCEPTION_CATCHING=0 --embed-file "Super Mario Bros.nes" -O2

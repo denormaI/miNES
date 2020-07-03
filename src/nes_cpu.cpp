@@ -1,6 +1,6 @@
 #include "nes_cpu.h"
 #include "nes_ppu.h"
-#include "nes_apu.h"
+//#include "nes_apu.h"
 #include "nes_cart.h"
 #include "nes_controllers.h"
 #include "mines_sys.h"
@@ -87,7 +87,7 @@ u8 nes_cpu::read(u16 addr)
 		}
 		else
 		{
-			return m_apu->read(addr);
+			//return m_apu->read(addr);
 		}
 		break;
 
@@ -139,7 +139,7 @@ void nes_cpu::write(u16 addr, u8 d)
 		}
 		else
 		{
-			m_apu->write(addr, d);
+			//m_apu->write(addr, d);
 		}
 		break;
 
@@ -1315,8 +1315,8 @@ void nes_cpu::attach_devices(nes_device_map_t device_map)
 	m_cart = std::dynamic_pointer_cast<nes_cart>(device_map["cart"]);
 	if (!m_cart) throw mines_exception("nes_cpu: Failed to get nes_cart device.");
 
-	m_apu = std::dynamic_pointer_cast<nes_apu>(device_map["apu"]);
-	if (!m_apu) throw mines_exception("nes_cpu: Failed to get nes_apu device.");
+	//m_apu = std::dynamic_pointer_cast<nes_apu>(device_map["apu"]);
+	//if (!m_apu) throw mines_exception("nes_cpu: Failed to get nes_apu device.");
 
 	m_controllers = std::dynamic_pointer_cast<nes_controllers>(device_map["controllers"]);
 	if (!m_controllers) throw mines_exception("nes_cpu: Failed to get nes_controllers device.");

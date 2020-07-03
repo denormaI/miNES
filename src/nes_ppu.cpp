@@ -1,6 +1,6 @@
 #include "nes_ppu.h"
 #include "nes_cpu.h"
-#include "nes_apu.h"
+//#include "nes_apu.h"
 #include "nes_cart.h"
 #include "mines_sys.h"
 
@@ -39,8 +39,8 @@ void nes_ppu::attach_devices(nes_device_map_t device_map)
 	m_cart = std::dynamic_pointer_cast<nes_cart>(device_map["cart"]);
 	if (!m_cart) throw mines_exception("nes_ppu: Failed to get nes_cart device.");
 
-	m_apu = std::dynamic_pointer_cast<nes_apu>(device_map["apu"]);
-	if (!m_apu) throw mines_exception("nes_ppu: Failed to get nes_apu device.");
+	//m_apu = std::dynamic_pointer_cast<nes_apu>(device_map["apu"]);
+	//if (!m_apu) throw mines_exception("nes_ppu: Failed to get nes_apu /device.");
 }
 
 void nes_ppu::register_frame_end_handler(const frame_end_func& handler)
@@ -231,9 +231,18 @@ void nes_ppu::wmem(u16 addr, u8 d)
 	}
 }
 
+#include <iostream>
+int line = 0;
+
 // Steps the PPU n cycles.
 void nes_ppu::step(const int n)
 {
+    if (line != m_scanline)
+    {
+//        line = m_scanline;
+//        std::cout << "line " << m_scanline << std::endl;
+    }
+
 	for (int i = 0; i < n; i++)
 	{
 		static u16 addr = 0;

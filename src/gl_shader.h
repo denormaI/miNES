@@ -6,7 +6,7 @@
 #include <streambuf>
 #include <vector>
 
-#include "../types.h"
+#include "types.h"
 
 #include "gl_platform.h"
 

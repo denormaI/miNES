@@ -14,7 +14,7 @@ class mines_sys;
 class nes_ppu;
 class nes_cart;
 class nes_controllers;
-class nes_apu;
+//class nes_apu;
 
 class nes_cpu : public nes_device
 {
@@ -219,7 +219,7 @@ private:
 	cpu_register m_regs;
 
 	std::shared_ptr<nes_ppu> m_ppu;
-	std::shared_ptr<nes_apu> m_apu;
+	//std::shared_ptr<nes_apu> m_apu;
 	std::shared_ptr<nes_cart> m_cart;
 	std::shared_ptr<nes_controllers> m_controllers;
 	mines_sys* m_sys;

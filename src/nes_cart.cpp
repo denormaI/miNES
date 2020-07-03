@@ -7,6 +7,8 @@
 #include "ines_mapper7.h"
 
 
+#include <iostream>
+
 nes_cart::nes_cart(mines_sys* sys) : 
 		m_sys(sys),
 		m_romsize(0) 
@@ -52,6 +54,7 @@ void nes_cart::load_rom(const std::string& path)
 	m_romsize = file.tellg();
 	file.seekg(0, std::ios::beg);
 
+    std::cout << "reading file\n";
 	const std::vector<u8> buffer(
 		(std::istreambuf_iterator<char>(file)),
 		(std::istreambuf_iterator<char>()));

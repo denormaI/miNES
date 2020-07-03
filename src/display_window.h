@@ -5,10 +5,14 @@
 #include <functional>
 #include <memory>
 
-#ifdef _WIN32
-#include <SDL.h>
-#else
 #include <SDL2/SDL.h>
+#if defined (_WIN32) 
+//#include <SDL.h>
+#elif __EMSCRIPTEN__
+//#include <SDL.h>
+#include <emscripten.h>
+#else
+
 #endif
 
 #include "types.h"
